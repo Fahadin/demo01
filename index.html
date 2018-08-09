@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>FahadIn</title>
+  <style>
+    @font-face {
+      font-family: 'Kaushan Script';
+      src: url(css/font/MyFirstCrush.ttf) format('ttf'),url(css/font/MyFirstCrush.ttf) format('truetype');
+      src: url(css/font/MyFirstCrush.ttf) format('ttf'),url(css/font/MyFirstCrush.ttf) format('truetype');
+      font-style: normal;
+      /* font-weight: 400; */
+    }
+    #homeBanner {
+      width: 100%;
+    }
+    .ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+      background-color: rgb(77, 7, 37) !important;
+      border-color: #ddd;
+      color: rgb(247, 247, 247) !important;
+      text-shadow: none !important;
+      font-weight: none !important;
+    }
+    #headline1, #headline2, #headline3, #headline4, #headline5, #headline6, #headline7 {
+      background-color: rgb(136, 10, 63) !important;
+      color: rgb(247, 247, 247) !important;
+      text-shadow: none !important;
+      letter-spacing: 0.15em;
+      font-weight: bold;
+    }
+    .center {
+      text-align: center;
+      margin: 0px auto;
+    }
+    .ui-mobile-viewport , .ui-overlay-a , .ui-mobile-viewport-transitioning , .viewport-fade a {
+      color: rgb(54, 54, 54) !important;
+      background: rgb(241, 5, 103) !important;
+    }
+    a {
+      background-color: rgb(136, 10, 63) !important;
+      color: rgb(247, 247, 247) !important;
+      text-shadow: none !important;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+    }
+    h3 {cursor: pointer;text-align: center;}
+    .h2 {
+      font-size: 1.1em !important;
+      font-family: "Kaushan Script" !important;
+      letter-spacing: 0.11em;
+    }
+    .banner {
+      display: block;
+      width: 100%;
+    }
+    .MarginTop-0 {
+      margin-top: 0px;
+    }
+    .hr {
+      border-bottom: 1px solid #ddd !important;
+      font-family: "Kaushan Script" !important;
+    }
+  </style>
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+  <script src="phonegap.js"></script>
+  
+</head>
+
+<body>
+  <div id="homeScreen" data-role="page">
+    <img src="imgs/Red-love-header-banner.png" class="banner" />
+    <div data-role="content">
+      <a href="#introductionpage" data-inset="true" class="ui-btn ui-corner-all">Go App</a>
+      <div class="ui-grid-a center">
+        <div class="ui-block">
+          <a href="#aboutScreen" class="ui-btn ui-corner-all ui-icon-info ui-btn-icon-notext ui-btn-inline ui-nodisc-icon ui-alt-icon">Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="introductionpage" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <!-- <h1 class="center MarginTop-0">Title Name App</h1> -->
+      <ul class"introductionpage" data-role="listview" data-inset="false" class="ui-nodisc-icon ui-alt-icon">
+        <li>
+          <a class="h2" href="#headline1">Birthday Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline2">Cute Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline3">Dreams Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline4">I'm Sorry Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline5">Love Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline6">Miss You Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline7">Romantic Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline8">Sad Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline9">Sweet Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline10">Good Morning</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline11">Good Afternoon</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline12">Good evening</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline13">Good Night</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline14">Eid Messages</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline15">Friendship Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline16">Mother’s day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline17">Father's Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline18">Marry Anniversary</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline19">Happy New Year</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline20">Motherland Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline21">Independent Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline22">Victory Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline23">Rose Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline24">Chocolate Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline25">Hug Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline26">Propose Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline27">Fool Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline28">Promise Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline29">Earth Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline30">Christmas Day</a>
+        </li>
+        <li>
+          <a class="h2" href="#headline31">Puja Messages</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- ========== headline 1 ============ -->
+  <div id="headline1" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center bt001">You have been a great storyteller teacher;<br>riveting the students' attention and keep us wanting to come to school every day.<br>Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt001">Copy</button>
+    </div>
+    <!-- <hr> -->
+    <div class="hr" data-role="content">
+      <p class="center bt002">Happy birthday...<br>have a great time goofing around the streets of ____ (City).<br>Enjoy your trip.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt002">Copy</button>
+    </div>
+    <!-- <hr> -->
+    <div class="hr" data-role="content">
+      <p class="center bt003">Leave the belligerence of the 20s.<br>Start out by being a good person,<br>a happy person;<br>and enjoy the success that comes your way.<br>Happy birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt003">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt004">Would love to emulate your simplicity,<br> unforced charm and good humour;<br> love you mom,<br> have a very happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt004">Copy</button>      
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt005">You have been a great storyteller teacher;<br> riveting the students' attention and keep us wanting to come to school every day.<br> Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt005">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt006">Happy birthday...<br>have a great time goofing around the streets of ____ (City).<br> Enjoy your trip.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt006">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt007">My wish for you...<br>may each road lead to where you find happiness...<br>Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt007">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt008">My wish for you...<br>may each road lead to where you find happiness...<br>Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt008">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt009">Thank you for not making your lectures monotonous.<br> Happy Birthday Sir!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt009">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt010">You are always running short of words...<br>so here's your gift...<br>a dictionary.<br> Happy birthday and happy reading.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt010">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt011">Happy birthday;<br> thought you would love revisiting old favourites</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt011">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt012">Here's to your love for books...<br>Hope you like the collection.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt012">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt013">Many congratulations...<br>you have completed your ____ th trip around the SUN.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt013">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt014">My Raven-haired enchantress;<br> you are my instant dose of happiness...<br>A very, very happy birthday to the little princess.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt014">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt015">May never-ending bliss <br>and<br> life's biggest joys be yours this day<br> and<br> every following day...<br>Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt015">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt016">A very happy ____ (75th) birthday.<br> Let's make this birthday monumental and make you feel extra special.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt016">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt017">A very happy ____ (75th) birthday.<br> Let's make this birthday monumental and make you feel extra special.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt017">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt018">Happy, happy birthday to my husband, best friend, confidante, coach, equal, lover, laughter, partner...<br>I love you for all that you are and all that you're yet to be.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt018">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt019">You are a colourful mosaic of love Mom;<br> happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt019">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt020">Celebrate today and each day with hard-core energy and enthusiasm.<br> Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt0120">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt021">Your reassuring voice and words of wisdom buoy up my spirits;<br> love you.<br> Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt021">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt022">Side by side;<br> hand in hand...<br>I'd love to grow old with you.<br> Happy Birthday dear.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt022">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt023">Happy Birthday dear,<br> you are not just a colleague;<br> you are a dear companion in the greatest shopping escapades.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt023">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt024">Happy Birthday Ma'am,<br> you have always been an amazing motivator.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt024">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt025">Happy Birthday Sir,<br> learning was always a fun activity,<br> with you.<br> Hope you enjoy your day.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt025">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt026">Wishing you a wonderful day and an amazing life...<br> Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt026">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt027">Somebody very special turns 40 today!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt027">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt028">My childhood friend,<br> my sister in crime,<br> my travel partner,<br> fellow foodie...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt028">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt029">My anchor through the good and the bad,<br> my agony aunt,<br> my endless bundle of energy...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt029">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt030">My gorgeous __________,<br> may you have the most gorgeous day!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt030">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt031">Cheers to your infectious laugh,<br> to that twinkle in your eyes,<br> and your beautiful soul!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt031">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt032">Happy birthday to my sweet,<br> lil' munchkin...<br>stay blessed always.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt032">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt033">Happy Birthday to the super gorgeous.<br> May you have the most gorgeous day.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt033">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt034">Cheers to your infectious laugh,<br> to that twinkle in your eyes...<br>Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt034">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt035">Hi stunner,<br> the most beautiful and my most favourite sister, dear;<br> A very happy birthday to you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt035">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt036">You were born to spray a dash of vibrant colours on the canvas of my life...<br>And you are doing just that...<br>Happy birthday love.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt036">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt037">Living radiance;<br> aging gracefully with a heart full of love...<br>happy birthday mom.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt037">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt038">Enjoy your special day to the fullest.<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt038">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt039">Congratulation on yet another year of blooming youth.<br> It's great how you're tuning so beautiful each year.<br> Happy 16th birthday dear daughter.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt039">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt040">May lady luck shine on you throughout your life.<br> Happy birthday little angel.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt040">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt041">Happy birthday to my best best friend in this whole world.<br> You are the coolest of our bunch.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt041">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt042">Hey! Don't count the candles, count your experiences.<br> Your wrinkles are beautiful and your greys make you look charming.<br> Happy birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt042">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt043">The CPU of our office;<br> thanks for all the guidance.<br> Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt043">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt044">Teenage is a lovely time,<br> enjoy life's moments but be responsible too;<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt044">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt045">Cool kids need cool birthdays...<br> enjoy yours with loads of ice-cream sent your way;<br> Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt045">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt046">Thank you son;<br> you lent me pride and joy.<br> Have a very happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt046">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt047">You are the family star...<br> brilliant, witty and charming...<br>Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt047">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt048">On this extra special day as you light the candles;<br> count your blessings and be thankful.<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt048">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt049">To the beautiful hero who loves his brethren more than self;<br> may God shower his grace on you.<br> Happy birthday my soldier.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt049">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt050">May God mend your flaws and shower his grace on you;<br> Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt050">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt051">May the golden majestic mountains and <br>the beautiful spacious skies shower love on you and bless a long life to my armoured knight.<br> Happy birthday bro.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt051">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt052">From sea to shining sea my wishes flowing to you;<br> have a very happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt052">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt053">One half of the perfect pair...<br> happy birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt053">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt054">You are never fully dressed without a smile,<br> smile more often;<br> Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt054">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt055">Happy Birthday hubby.....<br> You look smarter with your cute bald head,<br> and the lovely spectacled eyes.....<br> Love you more than ever before.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt055">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt056">I wish smiles, love, hugs, luck and every good thing for you on your birthday.<br> Stay blessed always.<br> Love you!<br> Many many happy returns of the day!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt056">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt057">You've always been a step ahead from the rest wishing you continued lead in everything you do on your birthday.<br> Wish You Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt057">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt058">I tried to be with you but couldn't manage,<br> your hug and gift with me,<br> we will meet soon.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt058">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt059">There is nothing which can carry my heart to you,<br> closest I could get was to send these flowers over.<br> Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt059">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt060">People slow down with age,<br> you just don't....<br> Happy Birthday,<br> keep a piece of cake for me,<br> see you soon.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt060">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt061">May your all wishes be met,<br> now and always.<br> Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt061">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt062">On your special day<br> I wish for you lots of love, health, hope and happiness.<br> Stay blessed.<br> Love you.<br> Happy Birthday!!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt062">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt063">Your dreams are real,<br> you work hard and you have a pure heart,<br> hope your birthday fulfills all your wishes and dreams come true.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt063">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt064">Birthday wishes straight from heart for a friend without any fault.<br> Have a great time,<br> see you soon.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt064">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt065">May almighty take care of all your wishes on your birthday.<br> May you win everytime.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt065">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt066">True friends are a few.<br> Thank you for making my life happen.<br> Warmest wishes on your birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt066">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt067">Anyone's birthday,<br> anyone's party,<br> be whatever,<br> spotlight needs where it needs to be,<br> On You! Happy Birthday and warmest wishes.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt067">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt068">How do you get it right every time?<br> Happy birthday wonder boy,<br> you are a genius,<br> much loved and best wishes.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt068">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt069">You are life of every party,<br> you set the mood,<br> it is your birthday and it is my turn to do the same.<br> Happy birthday my dear,<br> you are one and only one diva,<br> have fun 😊</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt069">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt070">Let me roll up my sleeves,<br> clear my throat and sing for you with all swag...<br> Happy Birthday to You...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt070">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt071">You are an example,<br> you keep promise,<br> you always do and,<br> you are loved and adored for the same.<br> Best wishes on your birthday,<br> stay the change you are.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt071">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt072">Best wishes to my healthy,<br> wealthy and wise friend,<br> Happy Birthday 😊</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt072">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt073">Think style.<br> Think you.<br> Same to same.<br> Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt073">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt074">Girls with sharp mind have a tender heart.<br> Happy birthday my girl,<br> you make it all happen.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt074">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt075">Dear friend,<br> may God shower all his blessings on you.<br> Enjoy your day to its fullest.<br> Happy birthday</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt075">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt076">Happy birthday to God's favorite angel.<br> May each day of your life be filled with lots of happiness and joy.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt076">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt077">You care and support us with such vibrant zeal Thanks for making life so much fun.<br> Wish you a very sweet birthday Dad.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt077">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt078">You made each lesson an enjoyable session Remembering you,<br> with love and respect Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt078">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt079">Even a year older,<br> you are still the prettiest Hot Wishes on your happiest birthday ever.<br> Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt079">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt080">Happy Birthday to the most extraordinary grandmom;<br> Inspiration to all of us Your sparkling eyes make our world a thousand times happier than paradise.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt080">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt081">Knowledge,<br> competency and values we have acquired from you<br> Happy Birthday loving ma’am.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt081">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt082">Wishing you<br> A Birthday full of glee and wonderful surprises to give you.<br> lasting memories to cherish for all days ahead.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt082">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt083">May God bless you<br> with the most wonderful and sweetest moments<br> on your Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt083">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt084">May this extra candle on your cake bring extra smiles.<br> Happy Birthday to you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt084">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt085">Wishing you a super exciting sixteenth birthday.<br> May each increasing candle fill you with wisdom, peace, and cheer.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt085">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt086">On your special day make fond memories,<br> celebrate grandly.<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt086">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt087">You are a source of joy and happiness;<br> Pouring over you a lifetime of happiness, laughter, and love on your special day.<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt087">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt088">Loads of fun,<br> excitement and beautiful memories on your special day<br> Happy Birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt088">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt089">Happy Birthday buddy<br> May all your dreams and desires manifest this coming year.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt089">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt090">Wishing a wonderful birthday to the wonder woman of my life.<br> Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt090">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt091">Sending countless blessings for you which will shine as stars on the sky of our love.<br> Happy birthday sweetheart!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt091">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt092">Sending hugs and love for someone<br> whom I love to the moon and back.<br> Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt092">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt093">May your memories today be awesome,<br> your dreams become a reality,<br> your joy last forever.<br> Have a wonderful birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt093">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt094">All things are sweet and bright.<br> May you have a lovely birthday Night.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt094">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt095">Wherever your feet may take,<br> whatever endeavour you lay hands on.<br> It will always be successful.<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt095">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt096">It's as simple as ABC;<br> today makes more sense because of you,<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt096">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt097">May you continue to improve as a person with each passing year.<br> Wishing you a very happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt097">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt098">Thanks for being a wonderful son to me.<br> I am so fortunate to have a fantastic son like you.<br> Happy Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt098">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt099">Good things happen to good people and you are definitely a good person.<br> Happy Belated Birthday!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt099">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt100">Your birthday only comes once a year,<br> so make sure this is the most memorable one ever<br> have a colourful day.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt100">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt101">Life is tough<br> but birthdays are smooth<br> because I will finally have a chance to smile at you.<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt101">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt102">Take a day off to celebrate your birthday.<br> Happy birthday.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt102">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt103">When I count my blessings,<br> I count you twice,<br> For you dear friend are sugar and spice.<br> Birthday wishes from my heart do flow to sit by your side as the candles you blow.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt103">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt104">On your very special day,<br> we wish that all your heart's wishes will be granted.<br> No one in this world deserves it more than you! Happy birthday with so much love.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt105">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt105">Happy birthday to my one true love!<br> Here's wishing you many years of good health<br> so that we can enjoy our time being together for many birthday celebrations ahead.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt106">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt106">To the one who makes my life complete,<br> in every way.<br> To my soul-mate for the best years we share...<br> friendly warm wishes to bring you birthday cheer.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt107">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center bt107">You are the twinkling pearl no treasure can be compared with.<br> Love you my boy have fun,<br> laughter and cheer.<br> Happy Birthday dear.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".bt108">Copy</button>
+    </div>
+  </div>
+  
+  
+  <!-- ========== headline 2 ============ -->
+  <div id="headline2" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center ct001">There’s few things greater in life then checking your phone and seeing a cute text message from that special someone-<br> it’s one of those simple pleasures in life we simply can’t get enough of.<br> Surprise that special person in your life and brighten up their day with one of these 50 ridiculously cute text messages!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct001">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct002">This is such a cute, yet romantic and somewhat deep text message. And let me tell you- it gets the job done. It tells that special someone that you like them, a lot, and they are on your mind more often than not. Who wouldn’t want to read something like this?</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct002">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct003">Such an adorable text message,<br> plus it’s short, sweet, and to the point. <br> Definitely one of the best and cutest text message ideas!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct003">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct004">Awe, now there’s no doubt about it: <br> this is a text message that WILL make their day.<br> This text basically tells them that you can’t even come up with words to describe them,<br> so they MUST be something pretty darn special.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct004">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct005">You can definitely<br> (and probably should)<br> follow up this text message<br> with<br> reasons <br>WHY they’ve made your life<br> so<br> much better.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct005">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct006">Everyone loves to know <br> that they’re missed-<br> so why not tell them how much you miss them <br>and<br> ask them out in the same text message?<br> A totally winning combination that works<br> every time!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct006">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct007">Wow,<br> that’s a long time.<br> They must be something pretty<br> amazing for you to hold out <br>for them,<br> and only them.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct007">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct008">The perfect text message for<br> a boyfriend <br>or<br> girlfriend<br> you’re very serious with.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct008">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct009">This one is pretty<br> self-explanatory.<br> You don’t just like it-<br> you are HONORED.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct009">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct010">Did anyone else think of the Beach Boys song <br>“Wouldn’t It Be Nice?”<br> Well, they had the right idea.<br> We all wish we could fall asleep and wake up to the one we love most,<br> so might as well tell them while we drift off into future fantasy land.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct010">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct011">This says a lot.<br> This says that you want them to be happy at all times,<br> no matter what the cost.<br> And that clearly shows how much you love and adore them.<br> Their happiness is worth more to you than almost anything in the world!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct011">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct012">Who on earth wouldn’t love to get <br>a totally romantic<br> and<br> cute poem like this one?</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct012">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct013">Absolutely adorable and may even have him second guessing his thoughts a bit.<br> Sounds like a winning combination to me!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct013">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct014">Do you ever think your partner gets tired of hearing the same ole <br>“I miss you/I’m thinking of you”<br> text?<br> Then spice things up with this beautiful and romantic text message.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct014">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct015">A totally<br> fun and special<br> lovey-dovey poem<br> that is guaranteed to warm <br>their hearts and put a smile on their face.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct015">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct016">Does this need any explanation?<br> It’s over-the-top romantic<br> and<br> we simply can’t get enough of it.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct016">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct017">Sometimes you need to amp up your <br>“I love your eyes, they’re beautiful!”<br> comment- <br>and <br>this is the perfect way to do it.<br> We love this wonderful compliment because <br>it’s unique and totally beautiful.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct017">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct018">Now that is just TOO amazing.<br> Who wouldn’t love to read something as beautiful as that.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct018">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct019">You know how you accidentally spend an extra 6 hours texting that special someone even though you’re supposed to wake up in 2?<br> Yea,<br> well- don’t make them feel bad when you’re dog tired the next day.<br> Make them know it’s A-OK with a silly text message like this one!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct019">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct020">Hahaha!<br> Another one of those seriously dorky <br>and funny text messages that still have tons of cuteness<br> and romance.<br> A definite winning combo when you don’t want things to be too serious!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct020">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct021">A little bit cheesy,<br> but still really cute nonetheless.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct021">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct022">We can only hope <br>they’ll call you seconds after reading this text message.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct022">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct023">Be ready for a,<br> “I know,<br> right?<br> Get over here!”<br> response.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct023">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct024">This can only be described in one word: <br>“Aweeeeeeee!!!”</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct024">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct025">This one is totally a classic,<br> but it makes us smile EVERY time.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct025">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct026">Trust me.<br> Whoever they are,<br> they will always want to hear something like this.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct026">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct027">Did anyone else just turn into a puddle after reading that?<br> Beautiful.<br> Breathtaking!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct027">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct028">Awe,<br> now that’s just absolutely beautiful.<br> Another beautiful text that makes our hearts melt.
+      </p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct028">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct029">This text message will DEFINITELY make them smile- maybe even giggle,<br> like I just did.<br> Either way,<br> you can make sure your partner feels loved<br> AND give them a reason to laugh all in one text message.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct029">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct030">Seriously?!<br> This needs no explanation.<br> This is just a super-duper adorable text message<br> and we can’t get enough of it. Ah!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct030">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct031">Because sometimes getting a simple <br>“Thank you”<br> from the one you love makes all the difference.<br> Tell them you appreciate them-<br> I guarantee they will love hearing it from you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct031">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct032">I mean,<br> we all know you certainly COULD live without them-<br> but for some reason everyone still thinks this is one of the cutest phrases out there.<br> So you might as well use it!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct032">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct033">Much like number 24,<br> but using a different set of words.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct033">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct034">Again,<br> this text message is seriously romantic and although short,<br> has tons of meaning.<br> This tells them just how important they are to you and your overall well-being.<br> You simply couldn’t be the same person without them- WOW!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct034">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct035">Sending this particular text message can only mean one thing:<br> a serious increase in the amount of hugs and kisses you get from your partner.<br> Sounds like a winning text message to me!<br> Give them a confidence boost and let them know you adore their lovin’ <br>and they’ll only want to do it more.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct035">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct036">We know you’re thinking it,<br> so why not tell them! They will feel special <br>and they’ll get even more excited to see you, too.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct036">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct037">Another great,<br> cute text message idea that will make them feel like one of the most important things in your life.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct037">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct038">Ditch the traditional <br>“I love you”<br> comment and shoot for something even greater<br> with this text message.<br> You don’t just love them-<br> you’ll love them for eternity.<br> Why wouldn’t <br>they want to hear something like that?</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct038">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct039">If you’re dating your own personal prince charming,<br> then this is definitely a text to send your guy.<br> He will feel like your big strong superhero <br>(and men LOVE to feel that way).<br> On the other hand,<br> telling her she’s your beautiful princess obviously makes her feel pretty and special-<br> the way every woman wants to feel.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct039">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct040">It’s such a terrible thing to be holding on to your loved one so tight,<br> then have to let go only to head home alone.<br> You know you are already wishing you never had to leave their side,<br> but letting them know makes them feel special and loved.<br> So you might as well tell them and complain about it together!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct040">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct041">Much like butterflies in your tummy,<br> heart racing is another big sign <br>that you’re falling for that special someone.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct041">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct042">If you’re still getting butterflies in your tummy after months of dating,<br> it can only mean one thing: love.<br> This is a really simple <br>and<br> unique way to tell someone you’re VERY fond of them,<br> maybe even falling in love with them <br>(if you haven’t already).<br> If you’re not ready for the big L word,<br> then this is a wonderful,<br> lovey option for a text message.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct042">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct043">When you don’t know what to say,<br> always revert back to the basics:<br> the most powerful three word sentence in the English language:<br> I love you.<br> You CAN’T go wrong sending this text message,<br> and you can put the icing on the cake by adding <br>“All I need is you”.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct043">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct044">This really says a lot.<br> This says that THEY make your life not only complete,<br> but PERFECT.<br> And they must be something pretty incredible to take<br> your life from okay to perfect overnight.<br> Let them know just how big of an impact<br> they make on you and your life!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct044">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ct045">One of those comments that we,<br> especially females,<br> never get tired of hearing.<br> You can’t go wrong with this cute text message!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct045">Copy</button>
+    </div>
+  </div>
+  
+  <!-- ========== headline 3 ============ -->
+  <div id="headline3" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center dm001">No dream comes true Until<br> you wake up & go to work.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm001">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm002">The future belongs to those<br> who believe in the beauty of their dreams.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm002">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm003">One of the most adventurous things left us is to go to bed.<br> For no one can lay a hand on our dreams.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm003">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm004">Sweet is the dream,<br> divinely sweet,<br> when absent souls in fancy meet.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm004">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm005">Dreams are made for believers;<br> Believers are made for dreams;<br> But I�m made for you and that�s a reality!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm005">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm006">If a little dreaming is dangerous,<br> The cure for it is not to dream less but to Dream more,<br> to dream all the time.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm006">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm007">Stars light Stars bright you are the only Star<br> I see tonight.<br> I wish<br> I might be there guarding <br>your dreams tonight,<br> Sweet dreams.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm007">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm008">Dream what you want to dream;<br> go where you want to go;<br> be what you want to be,<br> because you only have one life to live and one chance to you want to do."</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm008">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm009">I hate waking up from an awesome dream <br>and<br> forgetting what happened.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm009">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm010">I'll do my dreams with<br> my eyes wide open,<br> nd I'll do my looking back with<br> my eyes closed.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm010">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm011">1We All Have Our Time Machines...<br> Some Take Us Back,<br> They Are Called Memories...<br> Some Take Us Forward,<br> They Are Called Dreams...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm011">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm012">Once Upon A Time,<br> It Happened 2 Me The Sweetest Thing That Cud Ever B <br>It Was A Fantasy A Dream Come True<br> It Was d Day<br> I Came To Know Some1 Like <br>"YOU" (:</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm012">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm013">A Shining ANGEL Stands Beside Your Silky Bed,<br> Calling Ur Nice Name So Softly,<br> Throwing Flowers On U<br> And<br> Saying<br> Good Night <br>&<br> Sweet Dreams.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm013">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm014">When you find a dream inside your heart,<br> don't let it go.<br> for dreams are the tiny seeds from which beautiful Tomorrow Grows.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm014">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm015">MOON has come to color your dreams,<br> STARS to make them musical <br>and my SMS to give you warm and Peaceful Sleep.<br> Good Night...Sweet Dreams..!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm015">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm016">Since ur eyes are looking tired...<br> Let ur eye lashes hug each other for few hours.<br> Happy journey into the world of dreams,<br> Good Night.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm016">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm017">At this moment 3.7 Millions are sleeping,<br> 2.3 Millions are falling in Love,<br> 4.1 Million are eating and only one cute person in the whole world is reading my message....</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm017">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm018">Never blame a day in your life.<br> Good days give you happiness.<br> Bad days give you experience.<br> Both are essential in life!<br> All are Gods blessings!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm018">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm019">Dreamz is the key towards successful life To have dreams,<br> you must sleep well.<br> So step up the first ladder of your destiny.<br> Go to bed and have sweet dreams.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm019">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm020">Darkness is everywhere,<br> The Birds r back 2 "H�MES" Roads r "QUITE" Everybody SLEEPING" <br>but I m not U know y?Just want say 2?U" Sweet Dreamz...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm020">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm021">Dream is an art of sleep,<br> where you enjoy the life in virtual way.<br> May you have honey dipped sugar coated sweet dreams.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm021">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm022">Do not store dreams in your eyes;<br> they may roll down with tears.<br> Store them in your heart, each heart beat will inspire you to fulfill them.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm022">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm023">Dream is an art of sleep,<br> where you enjoy the life in virtual way.<br> May you have honey dipped sugar coated sweet dreams.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm023">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm024">Why do we close our eyes,<br> when we pray,<br> when we cry,<br> when we dream, when we miss someone, because most beautiful things in life are unseen they are only felt by heart.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm024">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm025">Dream Of star,<br> dream Of palace,<br> Dream Of person,<br> Dream of A face,<br> Dream of sea,<br> But when you dream of friend Dream of Me only..<br> Sweet Dreams dear...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm025">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm026">Dreams are the best part of life..<br> If you miss sleep..<br> You miss the best part of life..<br> So it's already late..<br> Go to bed..<br> &<br> catch a very sweet dream...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm026">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm027">Sweet is the dream,<br> divinely sweet,<br> when absent souls in fancy meet.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm027">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm028">everything on earth is as a result of dreamz,<br> they make the tommorow.<br> so lets all dream to make the world a better place.....<br> Dream Of Star,<br> Dream Of Palace.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm028">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm029">Dream Of Person,<br> Dream Of a Face,<br> Dream Of Sea,<br> BUT When you Dream Of Friend DREAM OF ME ONLY...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm029">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm030">"DREAMS visit us when we are asleep",<br> but GOD wakes us up each day <br>&<br> gives us every chance to make our<br> DREAMS<br> come true...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm030">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm031">We All Have Our Time Machines.<br> Some Take Us Back,<br> They are Called Memories.<br> Some Take Us Forward,<br> They are Called Dreams...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm031">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm032">Your only mine when i dream,<br> when i wake i wanna scream,<br> your not mine i'm all alone.<br> i can only text you on my fone.<br> do dreams lie or are they true,<br>i hope so cos babes i want u!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm032">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm033">One of the most adventurous things left us is to go to bed.<br> For no one can lay a hand on our dreams.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm033">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm034">Good nite my very special frnd.<br> I pray you lay in rest<br> And may tomorrow brings you Much love<br> and happiness.<br> Do not think of me......<br> I'm in your eyes,<br> in ur heart..<br> Sweet Dreams...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm034">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm035">I wish moon always be full & bright<br> And you always be cool & right Whenever you go to switch off the light Remember<br> I miss yoU......<br> And Wish yoU<br> Good Night.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm035">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm036">Go confidently in the direction Of your dreams!<br> Live the life you have imagined.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm036">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm037">These have been place where The world can't hold them down.<br> To the edge of dreams where pain Is nothing and glory is but a step away.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm037">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm038">Art of living:<br> First of all,dont make friends.<br> if made,dont go close to them.<br> if gone,dont like them.<br> if liked,then plz..<br> dont leave them.<br> Gud Night,<br> sweet dreams....</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm038">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm039">Dream a dream tonight as you sleep.<br> smile a smile tomorrow that you may keep.<br> may all of your dreams and wishes come true<br> Because i could'nt find a better friend like you!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm039">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm040">Do you know why we close our eyes when we sleep when we dream,<br> wen we kiss?<br> this is because the most precious thing in the world is unseen.<br> When i close my eyes<br> i see you!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".dm040">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm041">Even though it might seem easy to interpret<br> your friendz dream<br> when it comes to self interpretation<br> the task is daunting.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct041">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm042">To MEET AND DEPART Is the WAY OF LIFE.<br> to DEPART AND MEET Is the HOPE OF LIFE.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct042">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm043">You live in your dreams<br> but dreams may die Do not get shattered never ever cry The world is big and has lots to give Pick up a new dream because thats the way to live.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct043">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm044">The future belongs to those<br> who believe in the beauty of their<br> dreams. </p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct044">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm045">You are like a dream <br>that I don’t ever want to wake up from.<br> We all have dreams every night,<br> but all I want to dream about is you.<br> I wish my dream will come true just this one time.<br> I wish that...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct045">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm046">If my thoughts were a butterfly,<br> they would fly to you. Just to tell you <br>that I dream of you every day and night.<br> My thoughts are happy and peaceful,<br> just like butterfly...<br> all because of you.<br> I dream of you and.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct046">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm047">You are like a dream that sings me to sleep.<br> I have had dreams about love<br> but I never thought <br>how love can truly change my life<br> until I met you.<br> You have been in my dreams very often,<br> then you went into.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct047">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm048">I had a beautiful dream last night.<br> A dream that made me happy...<br> we were together,<br> walking hand in hand<br> and talking for hours,<br> joyfully.<br> It was perfect<br> and when I woke up<br> I realized that it was a dream <br>and I wanted.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct048">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm049">The moon whispered to me at night...<br> I had a dream of you and I together,<br> in love.<br> It was the sweetest dream.<br> When I miss you,<br> I look for the moon at night and wish upon it.<br> Sometimes I can sense.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct049">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm050">We were walking<br> in the garden<br> with beautiful flowers <br>surrounding us everywhere<br> and we were holding hands,<br> smiling and laughing.<br> I was thrilled by the exquisite elegance <br>and beauty enveloping our peaceful walk.<br> I was very happy...<br> then I woke up.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct050">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center dm051">I wish to share the stars with you,<br> I wish to spend my nights with you,<br> I wish my life was together with you.<br> Even if it is only a dream.<br> I wish upon the stars a secret dream of mine to come.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ct051">Copy</button>
+    </div>
+  </div>
+  
+  
+  <!-- ========== headline 4 ============ -->
+  <div id="headline4" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center imm001">I may be busy at times that you may feel that I don’t care for you.<br>I know that you know me, and you know that’s not true.<br>I’m sorry if you had felt that way, let me make it up to you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm001">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm002">You know what I miss the most?<br>Talking with you and sharing my world with you.<br>I miss you and I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm002">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm003">For all the things I have done, I’m sorry.<br>You know I never meant it.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm003">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm004">I could really use some time travelling now.<br>I want to take back all the bad things I had said and done<br>So that you wouldn’t hurt this much right now.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm004">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm005">I have hurt your feelings and have left you<br>when you needed me the most.<br>I don’t know how it happened, but all I know is,<br>I don’t want it to happen again.<br>I’m sorry. Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm005">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm006">I don’t have to kneel in front of you,<br>or cry you a river to tell you how sorry I am.<br>You know who I am, and you know<br>that I can’t stand you being hurt;<br>especially by me.<br>I’m sorry, let me make it up to you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm006">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm007">The thought of someone is making you cry is infuriating.<br>The thought that I made you cry is unforgivable.<br>Please, forgive me. I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm007">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm008">No man is an island and I can’t do this alone.<br>I miss you and I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm008">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm009"> “I’m sorry” is perhaps the hardest words to say. But if saying sorry messages for wife is the only way to bring our better half back to us, then it’s worth the try. Here are some sorry messages to say to your wife that you can use and tell her to make her forgive you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm009">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm010">I always wake up every morning with a smile.<br>You know why? It’s because of you.<br>Now I woke up and felt like I was carrying the world on my shoulders.<br>You know why? It’s because I have hurt you.<br>I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm010">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm011">I know I’m not perfect, and I may have hurt you.<br>But give me a chance again and I’ll prove to you that I can give you each day,<br>that perfect moment that can make you smile and not be hurt again.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm011">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm012">You know what our relationship taught me? Determination.<br>I’m not giving up on you babe, I’ll apologize to you until you forgive me.<br>Even if it takes me 24 hours a day or 7 times a week to do so,<br>as long as you’ll be mine again for the next 30 years, it will be worth it.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm012">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm013">Why do we need food? Because it nourishes us physically.<br>Why do we need sleep? Because we recover mentally in that way.<br>Why do we need love? Because it nourishes us emotionally.<br>Why do I need you? Why won’t I? You complete me.<br>I don’t want to live without you, I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm013">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm014">The past were just rotten memories,<br>I want to make new ones with you.<br>Only happy memories. Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm014">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm015">My pride is bigger than me,<br>I never apologize for something.<br>But I’d rather lose my pride than lose you.<br>I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm015">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm016">You’re stood by me all these years.<br>And me, being stupid, hurt and made you cry.<br>I’m really sorry, please forgive this stupid me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm016">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm017">I know I’ve said and done something that drove me away from you.<br>But let me make it up to you by giving me another chance,<br>And proving I can be a better person for you.<br>I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm017">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm018">I will do anything and everything just to take away all the hurt that you feel.<br>I’m sorry. Please forgive me and let me set things straight.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm018">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm019">I know why you need to forgive me,<br>because I know you can’t bear the feeling<br>that you can see me sad.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm019">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm020">I know I had been stupid,<br>I know I had hurt you.<br>But there’s one thing I don’t know yet,<br>will you forgive me?</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm020">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm021">There are a lot of things I wanna tell you.<br>A lot of stories that I want to share to you.<br>But first of all, let’s start with an apology. I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm021">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm022">I did something foolish.<br>I know I couldn’t take it back.<br>But I want to let you know that I deeply regret what I did.<br>I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm022">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm023">I know I hurt you,<br>I know I made you angry,<br>I didn’t like that but I did.<br>I’m so sorry. Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm023">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm024">Sorry<br>Sorry<br>Sorry<br>I will never get tired saying how sorry I am,<br>‘Til you forgive me.<br>I’m deeply sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm024">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm025">I’ve been so stupid and said foolish things.<br>I’m really sorry, how can I make it up to you?</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm025">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm026">Knock, knock!<br>It’s me, humbly saying “sorry”.<br>Hope you forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm026">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm027">I don’t know to put it in words...<br>I am really ashamed for what I’ve said and done,<br>Let me start by saying “I’m so sorry”.<br>I hope we can make it up.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm027">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm028">I know this is just one of the downside of our relationship.<br>I am so sorry;<br>I hope this mistake will make our relationship stronger than ever.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm028">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm029">I am sorry for initiating the argument.<br>Sometimes I become so childish,<br>but you still understand me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm029">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm030">Please forgive me for whatever I said.<br>I didn’t mean it.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm030">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm031">I am sorry, I almost risked our relationship.<br>I promise you to take good care of it with the best that I can.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm031">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm032">I don’t know how to make your broken heart heal faster,<br>but I’ll start by saying, “I’m sorry!”</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm032">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm033">I apologize for hurting your feelings<br>and for not being so thoughtful.<br>I hope I could make it up to you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm033">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm034">I hate the thought of you being mad at me.<br>Just let you know that I didn’t mean to hurt you.<br>I’m sorry. Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm034">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm035">You always understand me.<br>You are so patient with me.<br>But this time, I know I’ve gone overboard and I am so sorry.<br>Please give me another chance.<br>I’ll do my best to make it up to you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm035">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm036">I know it’s my fault.<br>I’m so sorry I’ve hurt you.<br>I’ll try my best to never hurt you again.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm036">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm037">I don’t know where to start.<br>I know it has been so painful for you.<br>But let me start by saying “I’m sorry”.<br>Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm037">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm038">I feel so bad for what I did to you.<br>I’m so sorry for hurting your feelings.<br>I’m sorry.<br>Give me another chance.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm038">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm039">Sorry for breaking your heart.<br>I didn’t mean to.<br>Please let me make it up to you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm039">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm040">I love you and the last thing I would ever want to do with you is to hurt you.<br>I’m so sorry for hurting your feelings.<br>Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm040">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm041">I know you’re mad at me right now<br>I know that I hurt you so bad<br>I just want you to know how sorry I am<br>Please forgive me!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm041">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm042">If you are to ask me how broken I am right now<br>I’ll ask you to look up in the sky and count the stars<br>Knowing that you’re hurting breaks my heart<br>Please let me make it up to you.<br>I’m so sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm042">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm043">I will make the first step<br>to make things better between us:<br>I am so sorry, honey.<br>Could you please forgive me?</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm043">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm044">I know I cannot undone what I’ve done<br>I really wish I could, for I cannot stand hurting you<br>Please find a room in your heart for forgiveness<br>For I’ll to everything to make it up to you.<br>I am really sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm044">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm045">I apologize for being so insensitive<br>Please forgive me in hurting you and breaking your heart.<br>I didn’t intend to, and that’s the last thing I want to do.<br>Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm045">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm046">Have you done something that you feel you need to be forgiven for, but don’t know the words to say? Here is a list of some I’m sorry messages, sorry card wordings, apology messages and sayings to help you give the apology they deserve.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm046">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm047">I feel so awful over what happened and want you to know that I am truly sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm047">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm048">I am so sorry that I have hurt you.<br> I am asking for your forgiveness even though I know that I don’t deserve it.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm048">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm049">I wish that I could go back in time and fix what happened.<br> But since I can’t, I just want you to know that I am truly sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm049">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm050">After doing some thinking,<br> I have realized that I was wrong.<br> Please forgive me!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm050">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm051">I have made a poor judgment and wish I could go back and change it.<br> I am so sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm051">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm052">I know that God has forgiven me for what I have done,<br> and I hope that you can forgive me, too.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm052">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm053">I feel sick over what I have done.<br> Please accept my apology.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm053">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm054">Sometimes there is nothing you can do to take back what you have done except ask for forgiveness.<br> I just want you to know that I am so sorry for what I have done.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm054">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm055">I don’t know how you could forgive me for being such a jerk,<br> but I care about you too much not to try.<br> I’m sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm055">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm056">I don’t even know how to begin to say that I am sorry.<br> I feel terrible over what I have done.<br> Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm056">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm057">I am so sorry for hurting your feelings.<br> I take back all the mean things that I said.<br> Can you find it in your heart to forgive me?</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm057">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm058">Every time you are angry at me, my heart breaks!<br> Please forgive me and know that I will try to do better!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm058">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm059">I didn’t ever mean to hurt you and I am so sorry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm059">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm060">I am so sorry for taking out on you problems that I have about myself.<br> Please forgive me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm060">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm061">I have hurt myself by hurting you.<br> You are such a great influence on my life and I want you back in it.<br> I am so sorry!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm061">Copy</button>
+    </div>
+  </div>
+
+
+
+  <!-- ========== headline 5 ============ -->
+  <div id="headline5" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center ilu001">Darling, you fill my life with light.<br> I’m so thankful to have you by my side.<br> I love you so much!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu001">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu002">♥ From the moment I first laid eyes on you,<br> I knew you were a perfect match for me.<br> I love everything about you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu002">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu003">♥ I will be always by your side in good and bad times,<br> in happy and sad moments...<br> because I love you!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu003">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu004">♥ Meeting you has been the highlight of my life.<br> I want to spend all my tomorrows finding out more and more reasons to be in love with you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu004">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu005">♥ Your beauty mesmerizes me. Your sense of humor puts a smile on my face. Your kindness and compassion fill me with awe. Thank you for being all that I could ask for in a woman and so much more.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu005">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu006">♥ There’s no other person on this earth that I’d love to spend my life with. I Love you girl!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu006">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu007">♥ Life is so much richer and more fulfilling since I met you. You fill a void in my heart that no one else could ever fill. I love you!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu007">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu008">♥ The love that we share is like nothing else I’ve ever experienced. Thank you for being my one and only true love!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu008">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu009">♥ Through all of life’s mountaintops and valleys, I’m so blessed to be able to share this roller coaster of life with you. Baby, you make my life more exciting than a thrill ride!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu009">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu010">♥ I never thought I would be able to have a relationship with someone as special as you. I love your charming smile, your warm embrace, and the sweet tenderness of the love we share.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu010">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu011">♥ A love like ours doesn’t happen every day. I feel so blessed to have found someone who is an ideal match for me. I love you so much!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu011">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu012">♥ When we have to spend time apart I miss everything about you. I miss all those intimate moments we’ve shared, and I can’t wait until we can be together again.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu012">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu013">♥ We’ve made so many amazing memories together. I can’t wait to see all that the future has in store for us.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu013">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu014">♥ I love you so much that I would be willing to lay down my life for you. You’ve brought me more joy than I ever thought was possible. I will love you forever.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu014">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu015">♥ Your kisses and cuddles make me warm from the top of my head to the soles of my feet. I’m so in love with you!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu015">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu016">♥ You’re the kind of strong, capable, and beautiful woman that impresses everyone you meet. I’m so proud to be able to call you my love!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu016">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu017">♥ Before I met you, I didn’t truly understand what it meant to love someone. Now that we’re together I can’t imagine what life would be like without you. I love you so much!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu017">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu018">♥ You and I were made for one another. We fit together like a hand in a glove. Thank you for choosing to be my girlfriend. I love you!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu018">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu019">♥ Loving you comes so naturally. Just seeing you walk into a room puts a smile on my face and a spring in my step.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu019">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu020">♥ You’re the only one in this world I want to be with from now until forever. Thank you for giving me your heart. I love you so much!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu020">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu021">♥ I’m giving you my heart now and forever. My goal is to make sure that I always make you feel loved, appreciated, and accepted.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu021">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu022">♥ Our relationship is the best thing that’s ever happened to me. I love everything about you, inside and out.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu022">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu023">♥ When it comes to love, you know exactly what to do and say to fill my heart with desire. I can’t wait to see you and express our love for each other again.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu023">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu024">♥ You fill my heart until it overflows with love. I can’t stop thinking about you. Baby, I can’t wait until we’re together again.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu024">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu025">♥ I want to prove my love to you through my actions and my words. I don’t ever want you to have a doubt in your mind about my affection and loyalty to you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu025">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu026">♥ No other woman in the world can hold a candle to your beauty, charm, and grace. I’m so grateful that we’re together! I love you so much!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu026">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu027">♥ When I gaze into your eyes I feel like I’m seeing right down into the depths of your soul. I love the feeling of connecting with you on such a deep level.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu027">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu028">♥ No matter how bad of a day I’ve had, when I see you all my frustration and sorrow seems to melt away. I’m so thankful for you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu028">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu029">♥ Thank you for forgiving me when I’ve let you down, for believing in me when no one else did, and for sticking with me through thick and thin. I will always love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu029">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu030">♥ I really don’t feel good enough to deserve someone like you. You’re breathtakingly beautiful, extremely smart, and so fun to be around. You’re amazing!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu030">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu031">♥ Roses are red, violets are blue, when it comes to our love, I’ll always be true, because I love you!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu031">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu032">♥ You don’t have to worry about whether or not I’m going to keep on loving you. I’m totally committed to you today, tomorrow, and always.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu032">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu033">♥ Darling, when I’m with you, I feel like I have the best of both worlds. Your inner beauty and your outer beauty both amaze me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu033">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu034">♥ When I’m with you sometimes I feel like I have to pinch myself to make sure I’m not dreaming. Our relationship is like a dream come true!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu034">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu035">♥ I’ve never met anyone before who treats me with such love, respect, and understanding. I hope I can someday learn to be as encouraging to you as you are to me. I love you so much!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu035">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu036">♥ Whether it be a romantic dinner at a fancy restaurant or a simple walk in the park, every moment we spend together is pure magic!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu036">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu037">♥ I cherish every memory we’ve ever made together and I can’t wait to see what the future has in store for us. I love you so much!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu037">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu038">You have no idea how much my heart races when I see you.<br>I love when I catch you looking at me.<br>You’re weird…but I like it!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu038">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu039">I want you to know that there's no one who can replace you. The way you look, the way you always know what I am thinking about, the way you gave me hug when I need it the most, and the way you listen to me is priceless. You have touched me more profoundly than I ever thought you could. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu039">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu040">I’m so completely in love with you. I wake to think of you and I sleep to see you in my dreams. Everyday seems like a blessing since I have met you. I feel so lucky and honored to be in love with you with all of my heart. Thank you for sharing your love with me. It’s a truly wonderful gift. I will love you always.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu040">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu041">You were already on my mind when I woke up this morning. Funny how I just can't stop thinking about you. Six months ago we hadn't even met, and now you are the most important person in my life. So, I just wanted to say I love you, and I can't wait to see you again.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu041">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu042">The only time I stupidly smile at my phone is when I get text messages from you.. I love you..</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu042">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu042">I always wake up smiling. I think it’s your fault.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu043">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu044">Just had to let you know… loving you is the best thing that happened to me..<br>I Love You..</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu044">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu045">Thank you for always making me feel like the most beautiful woman in the world..<br>I love you...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu045">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu046">Everyone has their own motivation to get up in the morning and face the day. You are mine.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu046">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu047">To say I love you would be an understatement.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu047">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu048">You are my life and without you I cant go on.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu048">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu049">Only my heart can understand the things you make me feel.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu049">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu050">I could go a thousand miles if only to see you happy.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu050">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu051">Love you lots! I have always lived a life that is planned.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu051">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu052">I’m addicted to the random kisses, random hugs and laughs.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu052">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center ilu053">This life I never want to let go off. I adore you!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".ilu053">Copy</button>
+    </div>
+  </div>
+
+
+  <!-- ========== headline 6 ============ -->
+  <div id="headline6" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center imu001">I miss you so much that it hurts.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu001">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu002">After all the time that has passed,<br> I still find myself missing you every minute of each hour,<br> each hour in a day,<br> every single day of each week,<br> every week of the month,<br> and every month of the year.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu002">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu003">There is not a single moment in any day that I do not find myself missing you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu003">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu004">I close my eyes and see you there.<br> But when I open them and see nothing there,<br> I realize how much I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu004">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu005">I miss you so much that I am jealous of the people that get the chance to see you every day.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu005">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu006">I miss you a little too much,<br> a little too often,<br> and a little more each and every day.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu006">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu007"></p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu007">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu008">I know that I love you because of how much I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu008">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu009">I wonder if you miss me as much as I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu009">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu010">I miss your voice.<br> I miss your touch.<br> I miss your face.<br> I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu010">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu011">I thought that I could handle being apart from you,<br> but I miss you too much.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu011">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu012">I thought that I could handle being apart from you,<br> but I miss you too much.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu012">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu013">Every now and then I see something that reminds me of you and then there I am,<br> missing you again.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu013">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu014">I will not lie.<br> The truth is that I really miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu014">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu015">Nothing makes a room emptier than wishing that you were in it.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu015">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu016">There is an empty place in my heart where you used to be.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu016">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu017">If I had a flower for every time I think about you and how much I miss you,<br> then I would be walking forever in an endless garden.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu017">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu018">I can’t believe that I still miss you after everything that we went through.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu018">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu019">The pain of being without you is too much to bear sometimes.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu019">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu020">I can’t even begin to tell you how much I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu020">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu021">I can’t pretend that I don’t miss you because I see you in everything that I do.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu021">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu022">I can’t help that I miss you and the person that I was when I was with you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu022">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu023">I can’t help that I miss you and the person that I was when I was with you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu023">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu024">I know that I love you because I miss you even when you’re just in the next room.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu024">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu025">I’m not sure what is worse: missing you, or pretending that I don’t.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu025">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu026">To me, the brightest and most colorful garden looks dull and dreary without you in it.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu026">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu027">I miss you so much that I want to throw a rock at you to show you how much it hurts.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu027">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu028">I find myself missing you a little too much, a little too often<br>, and a little more with each passing day.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu028">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu029">A day spent away from you is a day that is not worth living.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu029">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imu030">I miss you once I wake up and I miss you once I fall asleep.<br> I wish that we could always be together.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imu030">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm031">You may not always be here at my side, but you are always right here in my heart.<br> I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm031">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm032">I will stop missing you when we are together again.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm032">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm033">You don’t have to be a thousand miles from me for me to miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm033">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm034">I would prefer to be kissing you than missing you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm034">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm035">I miss you so much that I can’t help but feeling that every song I hear is about you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm035">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm036">There is not a single moment in my day that I do not miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm036">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm037">You are always the first thought in my head when I wake up in the morning.<br> That is how much I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm037">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm038">You are always the first thought in my head when I wake up in the morning. That is how much I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm038">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm039">Missing you and not being able to have you here with me is the worst feeling.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm039">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm040">Missing you is my heart’s way of reminding me that I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm040">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm041">Missing you is not an easy thing to do.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm041">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm042">Missing you is like walking around without my heart.<br> I feel this way because my heart is still with you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm042">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm043">When I miss you, all I want to do is hold you in my arms and kiss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm043">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm044">I miss everything about you.<br> Even the things that used to annoy me when you were still here.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm044">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm045">There are not enough words in the dictionary to describe how much I miss you and long for you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm045">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm046">There’s an emptiness inside of me that tells me that I must really miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm046">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm047">What I miss about you the most is how great we were together.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm047">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm048">Even though I miss you right now, I know that you will come back to me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm048">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm049">I miss you so much at this very moment,<br> but this distance between us is only temporary.<br> Nothing in this world can keep us apart from one another.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm049">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm050">If I had to explain how much I miss you,<br> I would just break down and cry.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm050">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm051">If I knew that would be the last time I would see you,<br> I would hug you a little tighter,<br> kiss you a little longer,<br> and tell you that I love you one more time.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm051">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm052">I miss you. And I miss us. Together we were a great team.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm052">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm053">I always wonder if you miss me as much as I miss you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm053">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm054">I hope you’re not doing great without me. To be honest,<br> I am a wreck without you.<br> I miss you too much.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm054">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm055">You may be out of sight, but you are never out of my mind.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm055">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm056">I miss your lips and everything that is attached to them.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm056">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm057">I miss the way you could make me smile without any effort at all.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm057">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm058">Even though we are miles apart,<br> you are still a very important part of who I am.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm058">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm059">The distance means nothing.<br> You still matter in my life.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm059">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm060">I miss you because you are impossible to forget.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm060">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm061">No matter how busy I try to keep myself, I always find a second to think of you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm061">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm062">I miss you every single day because you were so special to me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm062">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm063">I miss you like the sun misses the stars each morning.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm063">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm064">I only miss you when I’m breathing.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm064">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm065">I have just been sitting here waiting for the days where I no longer miss you anymore.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm065">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm066">There is a hole in the world where you used to be.<br> I often fall into it and that is when I find myself missing you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm066">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm067">People say that time heals all wounds but time has only given me a chance to miss you even more.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm067">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm068">You are the missing piece to the puzzle in my life.<br> All I need is for you to complete it.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm068">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm069">Loving you is the easiest thing I have ever had to do and missing you is the hardest thing I have ever done.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm069">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center imm070">I love you so much that I miss you even when you are asleep in the same bed as me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm070">Copy</button>
+    </div>
+  </div>
+
+
+  <!-- ========== headline 7 ============ -->
+  <div id="headline7" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center rm001">So far, every moment we’ve spent together has been awesome.<br> But I promise you,<br> that the best is yet to come.<br> I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm001">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm002">I learnt the meaning of love from you;<br> you are the best thing given to me by God.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm002">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm003">It is not true that love does not have boundaries.<br> In fact, my love for you has created boundaries in your heart so that no one else can come in.<br> I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm003">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm004">You are not just an ordinary person in my life, you are more than that, you are my friend, well-wisher, mentor, and lover, beyond that you are the person for my life.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm004">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm005">If you were cheese, I would be a mouse so I can nibble you bit by bit. If you were milk, I would be a cat so I can drink you sip by sip. But if you were a mouse, I would still be a cat so I can devour you piece by piece. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm005">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm006">The spaces between my fingers are right where yours fit perfectly.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm006">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm007">My love for you is so real, that it makes me want to do unreal things like jumping on the clouds and climbing on the rainbow. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm007">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm008">You’re like my asthma, you take my breath away. Like dandruff; I can’t get you off my head. Like my car, you drive me crazy. Like dentures, I can’t smile without you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm008">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm009">Our lives are like a romantic movie played again and again. We smile, we flirt, we laugh and we fight – and we do it all over again. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm009">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm010">At times I used to wonder how it has happened in my life, how I met you in my life. The turning point in my life is meeting you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm010">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm011">Falling in love with you… I don’t know how or when it happened. All I know that it is the best thing to have happened to me. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm011">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm012">I get the best feeling in the world when you say hi or even smile at me because  I know, even if its just for a second, that I’ve crossed your mind.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm012">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm013">From random laughs to random kisses, our love has put me in a blissful state of randomness that I never want to come out of. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm013">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm014">If you listen to my breaths closely, you will hear the words I Love You coming out with every single one. I am literally living for you, and only you. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm014">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm015">You know more about me than I know about myself, I feel so comfortable with you dear.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm015">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm016">I care for you and you care for me, you make everything so easy for me to run my days.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm016">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm017">The sun can rise, the sun can set, but my day will never start until I get. A text from you, followed by a hug, and later a lot of kisses over a warm coffee mug. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm017">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm018">Sometimes my eyes get jealous of my heart. Know why? Because you always remain close to my heart and far from my eyes.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm018">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm019">I never thought that only three words could sum up the reason for my existence. But I realized how wrong I was when I said… I Love You.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm019">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm020">I don’t want to miss your voice, don’t want to miss your care and love and if I miss these I am missing what makes my life worth living.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm020">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm021">If loving you was a job, I would be the most deserving, dedicated and qualified candidate. In fact, I would even be willing to work for free. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm021">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm022">I don’t know how you got inside my heart, but I do know that I never want you to leave. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm022">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm023">People may come and go in my life but you are the only one going to stay in my life forever.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm023">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm024">Loving you is not a choice or an option. It is a need and a necessity. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm024">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm025">If you ever asked me to pick between you and my dreams, I wouldn’t know what to say because being with you is my only dream. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm025">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm026">The best time to love with your whole heart is always now, in this moment, because no breath beyond the current is promised.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm026">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm027">When I saw U I was afraid to meet U,<br> when I met U I was afraid to kiss U,<br> when I kissed U I was afraid to love U,<br> now that I love U I’m afraid to lose U.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm027">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm028">Every time I see you smile, is a moment that makes all of life’s troubles worth tolerating. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm028">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm029">Love is a special gift. A special gift is you. Therefore my love is you. It’s logical and true.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm029">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm030">There’s one thing on earth I never wanted to end. That’s loving you. I Love you so much dear!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm030">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm031">Your love is the only armor I need to fight all of life’s battles. xoxo</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm031">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm032">Just like how Instagram is incomplete without those mellow hues, my life is incomplete without you. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm032">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm033">Every time we cuddle, turns into my life’s newest priceless memory. xoxo</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm033">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm034">I don’t know what relationship status I should use for my Facebook because there is nothing called ‘madly in love’, which I am with you. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm034">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm035">You are always in my mind, In my dreams, when I’m awake, I’m always thinking of you. I just want you to know that I’m missing you so. I Love you so much!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm035">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm036">To survive, humans need air, food and water. I just need your hugs, smiles and kisses. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm036">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm037">Even the mere silence of love, has the power to drown out all of life’s chaos. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm037">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm038">You are the most amazing person I have ever met. You make the world a better place to live in. I feel so lucky to be loved by someone like you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm038">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm030">I wish I could tell you I already got over what we decided, but the truth is that I have not been able to overcome it at all. The single thought of living alone, of not sharing my happiness with you and not having you by my side when I need you hurts a lot and does not let me move on</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm030">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm040">I am very selfish and self-centered about the things that I want, and the thing that I want most desperately is… your happiness.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm040">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm041">Love makes you realize that life doesn’t need to be perfect as long as it is happy. xoxo</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm041">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm042">Attraction brought us closer. Love’s gonna keep us that way, forever. xoxo</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm042">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm043">Your touch does to me what a pebble does, when dropped into the calm waters of a lake. You send ripples through my body and my soul. I love you sweetie.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm043">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm044">The more I’ve gotten to know you, the more I’ve realized how awesome you are. I love you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm044">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm045">Kiss me and you will see how important I am.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm045">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm046">If you are not too long, I will wait here for you all my life.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm046">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm047">There is no charm equal to tenderness of heart.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm047">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm048">So, I love you because the entire universe conspired to help me find you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm048">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm049">A beautiful woman delights the eye; a wise woman, the understanding; a pure one, the soul.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm049">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center rm050">I love you more than my own skin.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm050">Copy</button>
+    </div>
+  </div>
+
+
+
+
+  <!-- ========== headline 8 ============ -->
+  <div id="headline8" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center smt001">Missed that person too much until you broke down. You try to hold it back and not think about it but you can't.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt001">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt002">No matter how many people contact you in a day, if the person you really care didn't contact you, you still feel lonely, and sad.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt002">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt003">Sometimes you love me,<br>Sometimes you don't,<br>You really did confuse me.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt003">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt004">Every time I texts you
+          But you didn’t reply,<br>I was silent.<br>But when you left me,<br>I burst into tears<br>because you hurt Me More Than I Deserve..!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt004">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt005">"I Have Learned 2Care for people 2 much,<br>Not bcoZ they should care 4 Me.<br>But bcoZ I Know the pain oF being iGNORED.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt005">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt006">A broken trust can be best described as a melted chocolate..<br>No matter what you do,<br>I t will never return to it's original form...!!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt006">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt007">A lovable person is a medicin 4 any kind of pain in this whole world<br>But<br>There's no medicine available in whole world for the pain given by that lovable person.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt007">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt008">Wel said:
+        Some OnEaskEd me aRe u gettIng tired of being hurt?
+        I rEplEyd, istil handle it..<br>ThY asked tilWhEn?<br>I smiled aNd said... Until SoMeOnE get tired of<br>"HURTING ME"</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt008">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt009">Never assume datsumbody luvs u by their sweetness...<br>Sumtyms, u r just an option whn they r bored...</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt009">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt010">You Know Somebody,<br>And They Cry For You.<br>They Stay Awake At Night,<br>And Dream Of You.<br>I Bet You Never ,<br>Even Know They Do,<br>But Somebody Crying For You.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt010">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt011">Crying Is Right At Hand,<br>In The Smothering Dark,<br>Closed Inside Someone Else,<br>When You See How Everything,<br>You Can Ever Accomplish,<br>Will End Up As Trash.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt011">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt012">Heart is equal to a mirror Mirror shows reflection, &<br>Heart shows affection.<br>Both have one equal quality,<br>can't be reformed once broken.!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt012">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt013">My eyes are hurting because I can not see you,<br>my arms are empty because I can not hold you,<br>my lips are cold because I can not kiss you<br>And my heart is breaking because I am not with you.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt013">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt014">The pain is not on the day of missing our dear ones.<br>The pain is really when u live without them<br>& with their presence in your mind.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt014">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt015">When i die don't cry in front of my dead body <br>who knows my hands may come to wipe of your<br>tears that's kind of love!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt015">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt016">People change for 2 reasons:<br>1-They have learned a lot,<br>or<br>they have been hurt too many times.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt016">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt017">Pain & Rain have a strong bonding when<br>you are in deep pain<br>You cry like a heavy rain &<br>when you see rain<br>You miss your loved ones and Feel the same pain....!</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt017">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt018">Very Cute Painful answer<br>When askd what is Gravity??<br>Sometimes How Hard We Try Not to Cry<br>but the tears Still Fall..<br>That's Gravity.! :-(</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt018">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt019">Drawback Of Human Heart:<br>"It Makes Judgement & Punishment Whn Others R Wrong<br>Bt<br>It Expects Compromise & Understanding Wen We R Wrong.</p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt019">Copy</button>
+    </div>
+    <div class="hr" data-role="content">
+      <p class="center smt020"></p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".smt020">Copy</button>
+    </div>
+  </div>
+
+
+  <!-- ========== headline 9 ============ -->
+  <div id="headline9" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>AppName</h1>
+      <a href="#introductionpage" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div class="hr" data-role="content">
+      <p class="center rm001"></p>
+      <button class="btn" data-clipboard-action="copy" data-clipboard-target=".rm001">Copy</button>
+    </div>
+  </div>
+
+
+  <div id="aboutScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>SAMOCA</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <h2 class="center">San Angelico Museum of Contemporary Art</h2>
+      <h3 class="center">Celebrating the Best of Modern Art</h3>
+      <img class="center banner" src="imgs/Museum.png" />
+      <p>SAMOCA (San Angelico Museum of Contemporary Art) is an art museum with a focus on modern art from the last 75 years. Since its inception in 1973, the museum has been the leader of modern contemporary design. SAMOCA is located in the heart of Ventura, ninety miles north of Los Angeles in Southern California.</p>
+      
+      <p>SAMOCA was established to promote the celebration of modern art in many forms including visual and performing arts, music, and crafts – with collections that are suitable for the entire family. The museum focuses on the unique talents and accomplishments of up-and-coming artists found within the forward-thinking California community and beyond.</p>
+      
+      <p>Our collections are designed to highlight the importance of contemporary art within modern society. Important influences, such as pop, cinema, and current events, permeate our halls. Through our diverse collections, events, and with the support of our patrons and volunteers, the museum helps to promote the importance of modern art around the world.</p>
+      <p class="center">123 Main Street Ventura, CA 12345 (800) 555-1212</p>
+    </div>
+  </div>
+
+  
+  <!-- <div>hello</div>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target="div">Copy</button> -->
+
+  <!-- 2. Include library -->
+  <script src="dist/clipboard.min.js"></script>
+
+  <!-- 3. Instantiate clipboard -->
+  <script>
+  var clipboard = new ClipboardJS('.btn');
+
+  clipboard.on('success', function(e) {
+      console.log(e);
+  });
+
+  clipboard.on('error', function(e) {
+      console.log(e);
+  });
+  </script>
+</body>
+
+</html>
+<!-- 
+
+<div class="hr" data-role="content">
+  <p class="center imm001"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm001">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm002"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm002">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm003"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm003">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm004"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm004">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm005"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm005">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm006"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm006">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm007"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm007">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm008"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm008">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm009"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm009">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm010"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm010">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm011"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm011">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm012"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm012">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm013"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm013">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm014"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm014">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm015"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm015">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm016"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm016">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm017"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm017">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm018"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm018">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm019"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm019">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm020"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm020">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm021"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm021">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm022"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm022">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm023"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm023">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm024"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm024">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm025"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm025">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm026"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm026">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm027"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm027">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm028"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm028">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm029"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm029">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm030"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm030">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm031"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm031">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm032"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm032">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm033"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm033">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm034"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm034">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm035"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm035">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm036"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm036">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm037"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm037">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm038"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm038">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm039"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm039">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm040"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm040">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm041"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm041">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm042"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm042">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm043"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm043">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm044"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm044">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm045"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm045">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm046"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm046">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm047"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm047">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm048"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm048">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm049"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm049">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm050"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm050">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm051"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm051">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm052"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm052">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm053"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm053">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm054"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm054">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm055"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm055">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm056"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm056">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm057"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm057">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm058"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm058">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm059"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm059">Copy</button>
+</div>
+<div class="hr" data-role="content">
+  <p class="center imm060"></p>
+  <button class="btn" data-clipboard-action="copy" data-clipboard-target=".imm060">Copy</button> 
+
+-->

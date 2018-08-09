@@ -1,2 +1,2 @@
-# demo01
-This is a Demo 01 app
+# SAMOCA-Demo
+The sample app for use in PhoneGap Build: First Look
