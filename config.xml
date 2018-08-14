@@ -37,7 +37,7 @@
     <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
     
     
-     <platform name="ios">
+
         <icon src="res/icon/ios/icon.png" width="57" height="57"/>
         <icon src="res/icon/ios/icon@2x.png" width="114" height="114"/>
         <icon src="res/icon/ios/icon-40.png" width="40" height="40"/>
@@ -54,13 +54,18 @@
         <icon src="res/icon/ios/icon-small.png" width="29" height="29"/>
         <icon src="res/icon/ios/icon-small@2x.png" width="58" height="58"/>
         <icon src="res/icon/ios/icon-small@3x.png" width="87" height="87"/>
-      </platform>
+
       
-       <platform name="android">
-        <icon src="res/icon/android/@drawable-icon.png" qualifier="ldpi"/>
-      </platform>
+
+        <icon src="res/icon/android/drawable-ldpi-icon" qualifier="ldpi"/>
+        <icon src="res/icon/android/drawable-mdpi-icon" qualifier="mdpi"/>
+        <icon src="res/icon/android/drawable-hdpi-icon" qualifier="hdpi"/>
+        <icon src="res/icon/android/drawable-xhdpi-icon" qualifier="xhdpi"/>
+        <icon src="res/icon/android/drawable-xxhdpi-icon" qualifier="xxhdpi"/>
+        <icon src="res/icon/android/drawable-xxxhdpi-icon" qualifier="xxxhdpi"/>
+
       
-       <platform name="ios">
+
         <splash src="res/screen/ios/Default~iphone.png" width="320" height="480"/>
         <splash src="res/screen/ios/Default@2x~iphone.png" width="640" height="960"/>
         <splash src="res/screen/ios/Default-Portrait~ipad.png" width="768" height="1024"/>
@@ -68,16 +73,16 @@
         <splash src="res/screen/ios/Default-736h.png" width="2208" height="1242"/>
         <splash src="res/screen/ios/Default-667h.png" width="750" height="1334"/>
         <splash src="res/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136"/>
-      </platform>
+
       
-      <platform name="android">
-        <splash src="res/screen/android/drawable-port-ldpi-screen.png" qualifier="ldpi"/>
-        <splash src="res/screen/android/drawable-port-mdpi-screen.png" qualifier="mdpi"/>
-        <splash src="res/screen/android/drawable-port-hdpi-screen.png" qualifier="hdpi"/>
-        <splash src="res/screen/android/drawable-port-xhdpi-screen.png" qualifier="xhdpi"/>
-        <splash src="res/screen/android/drawable-port-xxhdpi-screen.png" qualifier="xxhdpi"/>
-        <splash src="res/screen/android/drawable-port-xxxhdpi-screen.png" qualifier="xxxhdpi"/>
-      </platform>
+
+        <splash src="res/screen/android/drawable-port-ldpi-screen" qualifier="ldpi"/>
+        <splash src="res/screen/android/drawable-port-mdpi-screen" qualifier="mdpi"/>
+        <splash src="res/screen/android/drawable-port-hdpi-screen" qualifier="hdpi"/>
+        <splash src="res/screen/android/drawable-port-xhdpi-screen" qualifier="xhdpi"/>
+        <splash src="res/screen/android/drawable-port-xxhdpi-screen" qualifier="xxhdpi"/>
+        <splash src="res/screen/android/drawable-port-xxxhdpi-screen" qualifier="xxxhdpi"/>
+
       
       <preference name="permissions" value="none"/>
       
