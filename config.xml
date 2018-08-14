@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
+    xmlns:android = "http://schemas.android.com/apk/res/android"
     id          = "Fahadin.textapps.com"
     versionCode = "1" 
     version     = "1.0.0" >
@@ -36,7 +37,12 @@
     <preference name="android-build-tool" value="ant|gradle" />
     <preference name="android-windowSoftInputMode" value="stateVisible|adjustResize" />
     
-    
+    <config-file platform="android" parent="/manifest" mode="merge">
+      <supports-screens
+        android:xlargeScreens="false"
+        android:largeScreens="false"
+        android:smallScreens="false" />
+    </config-file>
 
         <icon src="res/icon/ios/icon.png" platform="ios" width="57" height="57"/>
         <icon src="res/icon/ios/icon@2x.png" platform="ios" width="114" height="114"/>
